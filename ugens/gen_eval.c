@@ -30,7 +30,7 @@ int sporth_gen_eval(sporth_stack *stack, void *ud)
             plumber_ftmap_add(pd, ftname, ft);
 #ifdef DEBUG_MODE
             plumber_print(pd, "gen_sporth: compiling file %s to table of size %d\n", 
-                    filename, size);
+                    ftname, size);
 #endif
             plumber_register(&my_pd);
             plumber_init(&my_pd);
