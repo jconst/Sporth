@@ -676,7 +676,7 @@ int plumber_process_null(sp_data *sp, void *ud, void (*callback)(sp_data *, void
         while(running) {
             callback(sp, ud);
             sp->len--;
-            usleep(100);
+            //usleep(100);
         }
     } else {
         while(sp->len > 0) {
